@@ -11,7 +11,7 @@ If you do not already have unity installed see the instructions below.
 
 Linux/mac: git clone https://github.com/HZ-2000/Pong.git
 
-windows: download the assets folder
+windows: download the zip under the code tab
 
 2)Open Unity now or download it at https://store.unity.com/download-nuoa.Follow the installation guide all the way through the download.
 
