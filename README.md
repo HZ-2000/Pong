@@ -1,7 +1,9 @@
 # Pong
-Pong Assignment for Software Engineering
+Pong Assignment for Software Engineering 
 
-# Compiling the code/Updating the code will require a new build. 
+tutorial used curtious of: Zigurous 
+
+# Compiling the code/Updating the code
 
 If you do not already have unity installed see the instructions below.
 
