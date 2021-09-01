@@ -1,4 +1,10 @@
 # Pong
+
+![Game](https://user-images.githubusercontent.com/72225524/131628261-188d87b7-3f3d-47ff-8b87-41fb987984cc.png)
+
+![helpScreen](https://user-images.githubusercontent.com/72225524/131628276-fd7f6903-4a3e-4cb4-90f2-c41b53dbd4c4.png)
+
+
 Pong Assignment for Software Engineering 
 
 tutorial used curtious of: Zigurous 
