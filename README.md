@@ -5,29 +5,29 @@ Pong Assignment for Software Engineering
 
 If you do not already have unity installed see the instructions below.
 
-1)Download the .zipfile from BBLearn.
+1)Clone the git repository using either of these methods:
 
-2)Extract the contents of the zipped file into a new file.
+Linux/mac: git clone https://github.com/HZ-2000/Pong.git
 
-3)Open Unity now or download it at https://store.unity.com/download-nuoa.Follow the installation guide all the way through the download.
+windows: download the assets folder
 
-b.Once you can start your own project you can continue this guide.
+2)Open Unity now or download it at https://store.unity.com/download-nuoa.Follow the installation guide all the way through the download.
 
-4)Select the open file option in the top right corner.
+3)Select the open file option in the top right corner.
 
-5)Selectthe file where the zip files were extracted to.
+4)Select the file where the zip files were extracted to.
 
-6)This should open the Unity editor for this game of Pong.
+5)This should open the Unity editor for this game of Pong.
 
-7)In the top left corner select file -> Build & Run.
+6)In the top left corner select file -> Build & Run.
 
-8)Unity will automatically compile everything into the necessary files and create one convenient Pong application file that you can click on whenever you would like to play. 
+7)Unity will automatically compile everything into the necessary files and create one convenient Pong application file that you can click on whenever you would like to play. 
 
 Note Unity creates several other files and folders that must be in the same directory of the Pong application for the game to run. 
 
 # Installing Unity
 
-Go toUnity’s Download Pageand click “Download Installer for Windows”. 
+1.Go to Unity’s Download Pageand click “Download Installer for Windows”. 
 AUnityDownloadAssistant-x.x.exefile should be downloaded to your “Downloads” folder (where x.x is the current Unity version).
 
 2.Open the downloaded installer.
