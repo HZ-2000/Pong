@@ -10,16 +10,16 @@ public class LeftPaddleBoundaryTest
     [UnityTest]
     public IEnumerator TestUpperPaddleBoundary()
     {
-        SceneManager.LoadScene("SampleScene");
-        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene("Pong");
+        yield return new WaitForSeconds(3.0f);
 
-        GameObject paddle1 = GameObject.Find("Paddle1");
+        GameObject paddle1 = GameObject.Find("Player Paddle");
         Vector3 newPosition = paddle1.transform.position;
-        newPosition.y = 50.0f;
-
+        
+        newPosition.y = 50f;
         paddle1.transform.position = newPosition;
         yield return null; // skips a frame
-        Assert.AreEqual(2.25f, paddle1.transform.position.y);
+        Assert.AreEqual(4.2f, paddle1.transform.position.y);
 
 
         newPosition.y = 2.0f;
@@ -28,30 +28,30 @@ public class LeftPaddleBoundaryTest
         Assert.IsTrue(2.0f == paddle1.transform.position.y);
 
 
-        newPosition.y = 2.25f;
+        newPosition.y = 4.2f;
         paddle1.transform.position = newPosition;
         yield return null;
-        Assert.AreEqual(2.25f, paddle1.transform.position.y);
+        Assert.AreEqual(4.2f, paddle1.transform.position.y);
 
-        newPosition.y = 2.26f;
+        newPosition.y = 4.21f;
         paddle1.transform.position = newPosition;
         yield return null;
-        Assert.AreEqual(2.25f, paddle1.transform.position.y);
+        Assert.AreEqual(4.2f, paddle1.transform.position.y);
     }
 
     [UnityTest]
     public IEnumerator TestLowerPaddleBoundary()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Pong");
         yield return new WaitForSeconds(3.0f);
 
-        GameObject paddle1 = GameObject.Find("Paddle1");
+        GameObject paddle1 = GameObject.Find("Player Paddle");
         Vector3 newPosition = paddle1.transform.position;
         
         newPosition.y = -50f;
         paddle1.transform.position = newPosition;
         yield return null; // skips a frame
-        Assert.AreEqual(-2.25f, paddle1.transform.position.y);
+        Assert.AreEqual(-4.2f, paddle1.transform.position.y);
 
 
         newPosition.y = -2.0f;
@@ -60,14 +60,14 @@ public class LeftPaddleBoundaryTest
         Assert.IsTrue(-2.0f == paddle1.transform.position.y);
 
 
-        newPosition.y = -2.25f;
+        newPosition.y = -4.2f;
         paddle1.transform.position = newPosition;
         yield return null;
-        Assert.AreEqual(-2.25f, paddle1.transform.position.y);
+        Assert.AreEqual(-4.2f, paddle1.transform.position.y);
 
-        newPosition.y = -2.26f;
+        newPosition.y = -4.21f;
         paddle1.transform.position = newPosition;
         yield return null;
-        Assert.AreEqual(-2.25f, paddle1.transform.position.y);
+        Assert.AreEqual(-4.2f, paddle1.transform.position.y);
     }
 }
