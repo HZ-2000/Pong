@@ -10,7 +10,7 @@ public class LeftPaddleBoundaryTest
     [UnityTest]
     public IEnumerator TestUpperPaddleBoundary()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Pong");
         yield return new WaitForSeconds(1.0f);
 
         GameObject paddle1 = GameObject.Find("Paddle1");
@@ -42,7 +42,7 @@ public class LeftPaddleBoundaryTest
     [UnityTest]
     public IEnumerator TestLowerPaddleBoundary()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Pong");
         yield return new WaitForSeconds(3.0f);
 
         GameObject paddle1 = GameObject.Find("Paddle1");
