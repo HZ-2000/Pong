@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pong.unity
     guid: 80627e0373a0c8336842f8ed5b402e57
+  - enabled: 1
+    path: Assets/Scenes/StressTest.unity
+    guid: c28a5fb0c5b600841aa233203021489f
   m_configObjects: {}

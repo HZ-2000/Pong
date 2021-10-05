@@ -10,7 +10,7 @@ public class StressTest
     [SetUp]
     public void loadScene()
     {
-        SceneManager.LoadScene("Pong");
+        SceneManager.LoadScene("StressTest");
     }
 
     [UnityTest]
@@ -21,22 +21,8 @@ public class StressTest
         Rigidbody2D body = GameObject.Find("Ball").GetComponent<Rigidbody2D>();
 
         //Track positions of each paddle in Scene
-        Vector3 leftPlayerPos = GameObject.Find("Paddle1").GetComponent<Transform>().position;
-        Vector3 rightPlayerPos = GameObject.Find("Paddle2").GetComponent<Transform>().position;
-
-        //Get paddles' colliders
-        Collider2D leftColl = GameObject.Find("Paddle1").GetComponent<Collider2D>();
-        Collider2D rightColl = GameObject.Find("Paddle2").GetComponent<Collider2D>();
-
-        //Track speed in left direction
-        Vector2 leftSpeed;
-        leftSpeed.x = 0;
-        leftSpeed.y = 0;
-        
-        //Track speed in right direction
-        Vector2 rightSpeed;
-        rightSpeed.x = 0;
-        rightSpeed.y = 0;
+        Vector3 leftPlayerPos = GameObject.Find("Player Paddle").GetComponent<Transform>().position;
+        Vector3 rightPlayerPos = GameObject.Find("Computer Paddle").GetComponent<Transform>().position;
 
 
         //loop until ball moves beyond either paddle (should, in theory loop forever)
@@ -47,23 +33,14 @@ public class StressTest
             currentVelocity *= 1.1f;
             body.velocity = currentVelocity;
 
-            /*leftSpeed.x--;
-            rightSpeed.x++;
-            if (body.velocity.x < 0)
-            {
-                body.velocity = leftSpeed;
-            }
-            else
-            {
-                body.velocity = rightSpeed;
-            }*/
-            Debug.Log(body.velocity);
             yield return null;
+            //yield return new WaitForSeconds(0.5f);
 
         }
 
-
         Debug.Log("No Collision at velocity " + body.velocity.x);
+        Debug.Log(body.transform.position);
+        body.velocity = Vector2.zero;
     }
 
     /*[TearDown]
