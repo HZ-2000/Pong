@@ -10,7 +10,7 @@ public class StressTest
     [SetUp]
     public void loadScene()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("Pong");
     }
 
     [UnityTest]

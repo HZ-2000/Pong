@@ -11,7 +11,7 @@ public class LeftPaddleBoundaryTest
     public IEnumerator TestUpperPaddleBoundary()
     {
         SceneManager.LoadScene("Pong");
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.0f);
 
         GameObject paddle1 = GameObject.Find("Player Paddle");
         Vector3 newPosition = paddle1.transform.position;
@@ -43,7 +43,7 @@ public class LeftPaddleBoundaryTest
     public IEnumerator TestLowerPaddleBoundary()
     {
         SceneManager.LoadScene("Pong");
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.0f);
 
         GameObject paddle1 = GameObject.Find("Player Paddle");
         Vector3 newPosition = paddle1.transform.position;
